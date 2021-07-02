@@ -1,0 +1,13 @@
+{% extends 'messages/botbase.html' %}
+
+
+
+{% block content %}
+
+<p>{{question.key}} is your choice and {{data}} is my choice, {{"You won." if question.key==data else "You lost." }}</p>
+
+
+
+{% endblock %}
+ 
+    

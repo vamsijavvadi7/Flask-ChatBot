@@ -1,0 +1,61 @@
+{% extends 'messages/botbase.html' %}
+
+
+
+{% block content %}
+
+<div id="game" class="d-flex flex-column align-items-center">
+    
+
+    <div class="d-flex text-container">
+        
+         <div class="cell align-items-center">
+            <p class='box' onclick="send_response('random+1')">1</p>
+        </div>
+        <div class="cell align-items-center">
+            <p class='box' onclick="send_response('random+2')">2</p>
+        </div>
+        <div class="cell align-items-center">
+            <p class='box' onclick="send_response('random+3')">3</p>
+        </div>
+        <div class="cell align-items-center">
+            <p class='box' onclick="send_response('random+4')">4</p>
+        </div>  
+        <div class="cell align-items-center">
+            <p class='box' onclick="send_response('random+5')">5</p>
+        </div>  
+     
+           
+
+        </div>
+        <div class="d-flex text-container">
+            <div class="cell align-items-center">
+                <p class='box' onclick="send_response('random+6')">6</p>
+            </div>
+            <div class="cell align-items-center">
+                <p class='box' onclick="send_response('random+7')">7</p>
+            </div>
+            <div class="cell align-items-center">
+                <p class='box' onclick="send_response('random+8')">8</p>
+            </div>
+            <div class="cell align-items-center">
+                <p class='box' onclick="send_response('random+9')">9</p>
+            </div>
+            <div class="cell align-items-center">
+                <p class='box' onclick="send_response('random+10')">10</p>
+            </div>
+          
+        </div>
+        <div class="d-flex text-container">
+    
+        <p>Guess the number from the above given options</p>
+    
+        </div>
+
+
+
+</div>
+{% endblock %}
+ 
+    
+

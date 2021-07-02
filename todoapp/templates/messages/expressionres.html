@@ -1,0 +1,10 @@
+{% extends 'messages/botbase.html' %}
+
+
+
+{% block content %}
+
+<p>{{" " if data.startswith('S') else "The result of the expression:"}}{{data}}</p>
+{% endblock %}
+ 
+    

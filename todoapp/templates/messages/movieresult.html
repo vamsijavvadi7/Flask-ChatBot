@@ -1,0 +1,19 @@
+{% extends 'messages/botbase.html' %}
+
+
+
+{% block content %}
+
+{% if data["Response"]=='True' %}
+<p>Imdb rating: {{data["imdbRating"]}}</p>
+<p>Runtime: {{data["Runtime"]}}</p>
+<p>Actors: {{data["Actors"]}}</p>
+<p>Director : {{data["Director"]}}</p>
+<p>Plot : {{data["Plot"]}}</p>
+<img class="img" src={{data.Poster}} width="200px" height="200px" style="border-radius: 10px;">
+{% else %}
+<p>Movie not found in our database</p>
+{% endif %}
+{% endblock %}
+ 
+    
